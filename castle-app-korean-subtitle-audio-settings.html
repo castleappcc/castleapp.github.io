@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>캐슬앱 한국어 자막 설정·다국어 오디오 트랙 변경 및 싱크 조절 총정리 | castlee.cc</title>
+  <meta name="description" content="캐슬앱에서 한국어 자막 자동 불러오기, 글꼴 크기·배경 투명도 커스터마이징, 자막 싱크 밀림 보정 및 멀티 오디오 트랙 전환 방법을 상세히 안내합니다.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://castlee.cc/castle-app-korean-subtitle-audio-settings.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="캐슬앱 공식 가이드 (Castlee.cc)">
+  <meta property="og:title" content="캐슬앱 한국어 자막 설정·다국어 오디오 트랙 변경 및 싱크 조절 총정리">
+  <meta property="og:description" content="캐슬앱에서 한국어 자막 자동 불러오기, 글꼴 크기·배경 투명도 커스터마이징, 자막 싱크 밀림 보정 및 멀티 오디오 트랙 전환 방법을 상세히 안내합니다.">
+  <meta property="og:url" content="https://castlee.cc/castle-app-korean-subtitle-audio-settings.html">
+  <meta property="og:image" content="https://castlee.cc/assets/images/post-04.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="캐슬앱 한국어 자막 설정·다국어 오디오 트랙 변경 및 싱크 조절 총정리">
+  <meta name="twitter:description" content="캐슬앱에서 한국어 자막 자동 불러오기, 글꼴 크기·배경 투명도 커스터마이징, 자막 싱크 밀림 보정 및 멀티 오디오 트랙 전환 방법을 상세히 안내합니다.">
+  <meta name="twitter:image" content="https://castlee.cc/assets/images/post-04.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://castlee.cc/castle-app-korean-subtitle-audio-settings.html#article", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://castlee.cc/castle-app-korean-subtitle-audio-settings.html"}, "headline": "캐슬앱 한국어 자막 설정·다국어 오디오 트랙 변경 및 싱크 조절 총정리", "description": "캐슬앱에서 한국어 자막 자동 불러오기, 글꼴 크기·배경 투명도 커스터마이징, 자막 싱크 밀림 보정 및 멀티 오디오 트랙 전환 방법을 상세히 안내합니다.", "image": "https://castlee.cc/assets/images/post-04.svg", "inLanguage": "ko-KR", "datePublished": "2026-11-13", "dateModified": "2026-11-22", "author": {"@type": "Organization", "name": "Castlee.cc 기술 에디터팀", "url": "https://castlee.cc/"}, "publisher": {"@type": "Organization", "name": "Castlee.cc", "url": "https://castlee.cc/", "logo": {"@type": "ImageObject", "url": "https://castlee.cc/assets/images/post-01.svg"}}}, {"@type": "BreadcrumbList", "@id": "https://castlee.cc/castle-app-korean-subtitle-audio-settings.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://castlee.cc/"}, {"@type": "ListItem", "position": 2, "name": "기능 활용", "item": "https://castlee.cc/#guides"}, {"@type": "ListItem", "position": 3, "name": "캐슬앱 한국어 자막 설정·다국어 오디오 트랙 변경 및 싱크 조절 총정리", "item": "https://castlee.cc/castle-app-korean-subtitle-audio-settings.html"}]}]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문 바로가기</a>
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="brand-logo" aria-label="캐슬앱 공식 가이드 홈으로 이동">
+      <span class="brand-badge" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M4 19h16v2H4v-2zm2-3h12V8l-3 2-3-4-3 4-3-2v8z" fill="#ffffff"/>
+        </svg>
+      </span>
+      <span>캐슬앱 가이드 <span class="brand-domain">castlee.cc</span></span>
+    </a>
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-expanded="false" aria-controls="mainNav" aria-label="메뉴 열기">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="주요 메뉴">
+      <a href="index.html" class="nav-link ">홈</a>
+      <a href="castle-app-apk-download-install.html" class="nav-link ">APK 설치</a>
+      <a href="castle-app-smart-tv-firestick-guide.html" class="nav-link ">스마트 TV</a>
+      <a href="castle-app-korean-subtitle-audio-settings.html" class="nav-link active">한국어 자막</a>
+      <a href="castle-app-buffering-error-fix.html" class="nav-link ">오류 해결</a>
+      <a href="castle-app-faq-complete-guide.html" class="nav-link ">FAQ</a>
+      <a href="castle-app-apk-download-install.html" class="nav-cta">최신 가이드 보기</a>
+    </nav>
+  </div>
+</header>
+
+  <main id="main-content" class="container">
+    <nav class="breadcrumb-nav" aria-label="경로 안내">
+      <ol class="breadcrumb-list">
+        <li><a href="index.html">홈 (castlee.cc)</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="index.html#guides">기능 활용</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page">캐슬앱 한국어 자막 설정·다국어 오디오 트랙 변경 및 싱크 조절 총정리</li>
+      </ol>
+    </nav>
+
+    <div class="ad-slot-wrapper" data-ad-slot="header-top" aria-label="상단 안내 배너"></div>
+
+    <div class="post-layout">
+      <article class="post-main-card">
+        <div class="post-header-meta">
+          <span class="post-badge">기능 활용</span>
+          <time datetime="2026-11-13">발행일: 2026-11-13</time>
+          <span>·</span>
+          <span>최종 업데이트: 2026-11-22</span>
+          <span>·</span>
+          <span>6분 읽기</span>
+        </div>
+
+        <h1 class="post-h1">캐슬앱 한국어 자막 설정·다국어 오디오 트랙 변경 및 싱크 조절 총정리</h1>
+        <p class="post-lead">글로벌 영화, 드라마, 다큐멘터리를 감상할 때 정확한 한국어 자막과 깨끗한 오디오 트랙 설정은 콘텐츠 이해도와 몰입감을 좌우하는 핵심 요소입니다. 캐슬앱 내장 플레이어가 제공하는 세밀한 자막 스타일링과 싱크 보정 기능을 100% 활용하는 방법을 정리했습니다.</p>
+
+        <div class="post-hero-banner">
+          <img class="lazy-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23161f33'/%3E%3C/svg%3E" data-src="assets/images/post-04.svg" alt="캐슬앱 한국어 자막 설정·다국어 오디오 트랙 변경 및 싱크 조절 총정리" loading="lazy" width="800" height="450">
+        </div>
+
+        <nav class="toc-box" aria-label="본문 목차">
+          <div class="toc-title">목차 (빠른 이동)</div>
+          <ol class="toc-list">
+            <li><a href="#section-1">기본 우선 언어를 한국어(Korean)로 자동 고정하는 방법</a></li><li><a href="#section-2">눈이 편안한 자막 폰트 크기·색상·배경 박스 디자인 팁</a></li><li><a href="#section-3">자막 싱크 밀림 현상 0.1초 단위 정밀 보정 노하우</a></li><li><a href="#section-4">다중 오디오 트랙 전환 및 원어·더빙 선택 가이드</a></li>
+          </ol>
+        </nav>
+
+        <div class="article-prose">
+          <section id="section-1"><h2>기본 우선 언어를 한국어(Korean)로 자동 고정하는 방법</h2><p>매번 새로운 에피소드를 재생할 때마다 자막 목록을 스크롤하여 한국어를 직접 선택하는 번거로움을 줄이려면 앱 전역 설정에서 기본 자막 언어를 미리 지정해 두어야 합니다. 홈 화면 하단 내 정보(프로필) 탭의 재생 설정 메뉴로 진입한 뒤 기본 자막 언어(Preferred Subtitle Language) 항목을 한국어(Korean)로 선택하면 해당 콘텐츠에 한글 트랙이 존재할 경우 플레이어가 시작과 동시에 자동으로 한국어 자막을 화면에 출력합니다.</p><p>만약 특정 작품에 내장 한글 자막이 포함되어 있지 않다면 플레이어 우측 하단의 CC(자막) 아이콘을 눌러 온라인 자막 검색 기능을 실행하거나, 스마트폰에 저장된 외부 자막 파일(.srt, .ass, .vtt)을 직접 지정해 즉시 결합할 수 있습니다. 외부 파일을 불러올 때는 문자 인코딩을 UTF-8로 설정해야 한글 자모 깨짐 현상 없이 깔끔하게 표시됩니다.</p></section><section id="section-2"><h2>눈이 편안한 자막 폰트 크기·색상·배경 박스 디자인 팁</h2><p>밝은 야외 장면이나 흰색 배경이 자주 등장하는 영상에서는 기본 흰색 자막이 배경에 묻혀 글자가 잘 보이지 않는 경우가 많습니다. 캐슬앱 자막 스타일 설정에서는 글자 크기(소·중·대·특대), 텍스트 색상(순백색, 파스텔 옐로우, 민트 등), 테두리 윤곽선 두께, 그리고 반투명 검정 배경 박스 농도를 자유롭게 조합할 수 있습니다.</p><p>가장 가독성이 뛰어나고 눈의 피로도가 적은 추천 조합은 글자 색상을 부드러운 미색이나 연노란색(#FEF08A)으로 지정하고 외곽선 그림자를 진하게 넣거나, 배경 박스 불투명도를 45% 수준으로 설정하는 방식입니다. 스마트폰에서는 중간 크기(18~20pt), 태블릿이나 스마트 TV에서는 대 크기(26pt 이상)로 세팅하면 시청 거리에 구애받지 않고 선명한 가독성을 확보할 수 있습니다.</p><ul><li>UTF-8 / EUC-KR 자동 인코딩 판별: 구형 SMI·SRT 파일 로드 시 글자 깨짐 방지 옵션 점검</li><li>자막 상하 위치(Margin) 조절: 화면 하단 재생 컨트롤 바나 내장 하드섭과 겹치지 않도록 여백 이동</li><li>이중 자막(Dual Subtitle) 활용: 어학 학습 목적 시 상단 영어·하단 한국어 동시 표시 가능 여부 확인</li><li>ASS 스타일 태그 호환: 애니메이션 및 특수 서식 자막의 위치·색상 효과 보존</li></ul>
+                <figure class="diagram-figure">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 856 232" role="img" aria-label="그림 4. 캐슬앱 미디어 플레이어 자막 렌더링 및 다중 오디오 디코딩 파이프라인">
+  <rect width="856" height="232" rx="16" fill="#0b1120"/>
+  <text x="26" y="34" fill="#94a3b8" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="13.5" font-weight="700">CASTLEE.CC ARCHITECTURE &amp; WORKFLOW DIAGRAM</text>
+  
+    <g>
+      <rect x="24" y="54" width="184" height="142" rx="14" fill="#161f33" stroke="#10b981" stroke-opacity="0.55" stroke-width="1.5"/>
+      <circle cx="54" cy="84" r="14" fill="#10b981" fill-opacity="0.25"/>
+      <text x="54" y="89" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="800">1</text>
+      <text x="40" y="122" fill="#f8fafc" font-size="14.5" font-weight="700">트랙 메타데이터 분석</text>
+      <text x="40" y="150" fill="#cbd5e1" font-size="12.2">내장 자막(Soft-sub)</text>
+      <text x="40" y="170" fill="#cbd5e1" font-size="12.2"> 및 다국어 음성 스트림 감지</text>
+    </g><line x1="210" y1="125" x2="230" y2="125" stroke="#10b981" stroke-width="2.5"/><polygon points="228,119 236,125 228,131" fill="#10b981"/>
+    <g>
+      <rect x="232" y="54" width="184" height="142" rx="14" fill="#161f33" stroke="#10b981" stroke-opacity="0.55" stroke-width="1.5"/>
+      <circle cx="262" cy="84" r="14" fill="#10b981" fill-opacity="0.25"/>
+      <text x="262" y="89" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="800">2</text>
+      <text x="248" y="122" fill="#f8fafc" font-size="14.5" font-weight="700">한국어 우선 매칭</text>
+      <text x="248" y="150" fill="#cbd5e1" font-size="12.2">ISO 언어 코드(ko/ko</text>
+      <text x="248" y="170" fill="#cbd5e1" font-size="12.2">r) 자동 선택 또는 외부 SRT 로드</text>
+    </g><line x1="418" y1="125" x2="438" y2="125" stroke="#10b981" stroke-width="2.5"/><polygon points="436,119 444,125 436,131" fill="#10b981"/>
+    <g>
+      <rect x="440" y="54" width="184" height="142" rx="14" fill="#161f33" stroke="#10b981" stroke-opacity="0.55" stroke-width="1.5"/>
+      <circle cx="470" cy="84" r="14" fill="#10b981" fill-opacity="0.25"/>
+      <text x="470" y="89" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="800">3</text>
+      <text x="456" y="122" fill="#f8fafc" font-size="14.5" font-weight="700">가독성 스타일 적용</text>
+      <text x="456" y="150" fill="#cbd5e1" font-size="12.2">폰트 크기·외곽선 그림자·반</text>
+      <text x="456" y="170" fill="#cbd5e1" font-size="12.2">투명 박스 렌더링</text>
+    </g><line x1="626" y1="125" x2="646" y2="125" stroke="#10b981" stroke-width="2.5"/><polygon points="644,119 652,125 644,131" fill="#10b981"/>
+    <g>
+      <rect x="648" y="54" width="184" height="142" rx="14" fill="#161f33" stroke="#10b981" stroke-opacity="0.55" stroke-width="1.5"/>
+      <circle cx="678" cy="84" r="14" fill="#10b981" fill-opacity="0.25"/>
+      <text x="678" y="89" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="800">4</text>
+      <text x="664" y="122" fill="#f8fafc" font-size="14.5" font-weight="700">타임스탬프 동기화</text>
+      <text x="664" y="150" fill="#cbd5e1" font-size="12.2">±0.1초 오프셋 보정으로 </text>
+      <text x="664" y="170" fill="#cbd5e1" font-size="12.2">영상·음성·자막 일치</text>
+    </g>
+</svg>
+                  <figcaption class="diagram-caption">그림 4. 캐슬앱 미디어 플레이어 자막 렌더링 및 다중 오디오 디코딩 파이프라인</figcaption>
+                </figure>
+                <div class="ad-slot-wrapper" data-ad-slot="in-content" aria-label="본문 추천 배너"></div></section><section id="section-3"><h2>자막 싱크 밀림 현상 0.1초 단위 정밀 보정 노하우</h2><p>영상 릴리즈 버전에 따라 오프닝 로고 길이가 달라지면 대사보다 자막이 먼저 나오거나 반대로 뒤늦게 출력되는 싱크 불일치 현상이 발생할 수 있습니다. 이때는 영상을 종료할 필요 없이 재생 화면 우측 자막 설정 패널 안에 있는 자막 타이밍 조절(Subtitle Delay) 컨트롤을 사용하면 즉시 해결됩니다.</p><p>배우의 입모양보다 자막이 늦게 뜬다면 마이너스(-) 버튼을 눌러 시간을 앞당기고(예: -1.5s), 대사가 나오기도 전에 자막이 먼저 나타난다면 플러스(+) 버튼을 눌러 지연 시간(예: +2.0s)을 부여합니다. 0.1초 단위로 실시간 미리보기가 적용되므로 첫 대사 한두 문장만 듣고도 누구나 정확하게 싱크를 맞출 수 있습니다.</p></section><section id="section-4"><h2>다중 오디오 트랙 전환 및 원어·더빙 선택 가이드</h2><p>최신 멀티 트랙 스트리밍 소스에는 원어 음성 외에도 영어 더빙, 일본어 원음, 5.1채널 서라운드 트랙, 스테레오 경량 트랙 등 복수의 오디오 스트림이 함께 수록되어 있습니다. 플레이어 상단 또는 하단의 헤드폰(오디오 트랙) 아이콘을 탭하면 현재 컨테이너에 포함된 모든 음성 채널 목록이 표시됩니다.</p><p>이어폰이나 스마트폰 내장 스피커로 감상할 때 배경 효과음은 너무 크고 배우의 목소리가 작게 들린다면 5.1채널 멀티채널 트랙 대신 AAC 2.0 스테레오 트랙으로 전환하거나 플레이어의 야간 볼륨 평준화(Audio Boost) 옵션을 켜면 대사 전달력이 눈에 띄게 선명해집니다.</p></section>
+          
+        <div class="info-callout">
+          <div class="info-callout-title">함께 읽으면 좋은 필수 연관 가이드</div>
+          <p style="margin-bottom:8px;">보다 완벽한 스트리밍 환경 구성을 위해 아래 단계별 가이드를 이어서 확인해 보세요.</p>
+          <ul style="margin-bottom:0;">
+            <li><a href="castle-app-hd-4k-streaming-quality.html" style="color:#a5b4fc;font-weight:700;">캐슬앱 1080p FHD·4K 고화질 재생 설정 및 모바일 데이터 절약 노하우</a></li>
+            <li><a href="castle-app-offline-download-storage-guide.html" style="color:#a5b4fc;font-weight:700;">캐슬앱 오프라인 동영상 저장 기능 및 외장 SD카드 용량 관리 가이드</a></li>
+          </ul>
+        </div>
+        </div>
+
+        <nav class="post-prev-next" aria-label="이전 및 다음 포스트 이동">
+          <a class="pn-card" href="castle-app-pc-windows-mac-guide.html">
+            <span class="pn-label">&larr; 이전 가이드</span>
+            <span class="pn-title">PC(윈도우 11·맥북 Mac)에서 캐슬앱 실행하기: 에뮬레이터 최적화 설정</span>
+          </a>
+          <a class="pn-card" href="castle-app-hd-4k-streaming-quality.html">
+            <span class="pn-label">다음 가이드 &rarr;</span>
+            <span class="pn-title">캐슬앱 1080p FHD·4K 고화질 재생 설정 및 모바일 데이터 절약 노하우</span>
+          </a>
+        </nav>
+
+        <section class="related-posts-section" aria-label="관련 추천 포스트">
+          <h2 class="section-title" style="font-size:1.35rem;margin-bottom:6px;">추천 연관 가이드</h2>
+          <p class="section-subtitle">주제별로 연결된 심화 설정 매뉴얼을 확인해 보세요.</p>
+          <div class="related-grid">
+            
+            <article class="post-card">
+              <a href="castle-app-hd-4k-streaming-quality.html" class="post-card-thumb">
+                <img class="lazy-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23161f33'/%3E%3C/svg%3E" data-src="assets/images/post-05.svg" alt="캐슬앱 1080p FHD·4K 고화질 재생 설정 및 모바일 데이터 절약 노하우" loading="lazy" width="800" height="450">
+                <span class="post-category-tag">화질·최적화</span>
+              </a>
+              <div class="post-card-body">
+                <h3 class="post-card-title"><a href="castle-app-hd-4k-streaming-quality.html">캐슬앱 1080p FHD·4K 고화질 재생 설정 및 모바일 데이터 절약 노하우</a></h3>
+                <div class="post-card-footer">
+                  <span>2026-11-14</span>
+                  <a class="read-more-link" href="castle-app-hd-4k-streaming-quality.html">자세히 보기 &rarr;</a>
+                </div>
+              </div>
+            </article>
+            <article class="post-card">
+              <a href="castle-app-offline-download-storage-guide.html" class="post-card-thumb">
+                <img class="lazy-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23161f33'/%3E%3C/svg%3E" data-src="assets/images/post-06.svg" alt="캐슬앱 오프라인 동영상 저장 기능 및 외장 SD카드 용량 관리 가이드" loading="lazy" width="800" height="450">
+                <span class="post-category-tag">기능 활용</span>
+              </a>
+              <div class="post-card-body">
+                <h3 class="post-card-title"><a href="castle-app-offline-download-storage-guide.html">캐슬앱 오프라인 동영상 저장 기능 및 외장 SD카드 용량 관리 가이드</a></h3>
+                <div class="post-card-footer">
+                  <span>2026-11-15</span>
+                  <a class="read-more-link" href="castle-app-offline-download-storage-guide.html">자세히 보기 &rarr;</a>
+                </div>
+              </div>
+            </article>
+            <article class="post-card">
+              <a href="castle-app-buffering-error-fix.html" class="post-card-thumb">
+                <img class="lazy-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23161f33'/%3E%3C/svg%3E" data-src="assets/images/post-07.svg" alt="캐슬앱 무한 버퍼링·재생 멈춤·검은 화면 오류 원인과 즉시 해결법" loading="lazy" width="800" height="450">
+                <span class="post-category-tag">오류 해결</span>
+              </a>
+              <div class="post-card-body">
+                <h3 class="post-card-title"><a href="castle-app-buffering-error-fix.html">캐슬앱 무한 버퍼링·재생 멈춤·검은 화면 오류 원인과 즉시 해결법</a></h3>
+                <div class="post-card-footer">
+                  <span>2026-11-16</span>
+                  <a class="read-more-link" href="castle-app-buffering-error-fix.html">자세히 보기 &rarr;</a>
+                </div>
+              </div>
+            </article>
+            <article class="post-card">
+              <a href="castle-app-live-sports-channels-guide.html" class="post-card-thumb">
+                <img class="lazy-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23161f33'/%3E%3C/svg%3E" data-src="assets/images/post-08.svg" alt="캐슬앱 실시간 스포츠 중계 및 라이브 TV 채널 끊김 없이 시청하기" loading="lazy" width="800" height="450">
+                <span class="post-category-tag">기능 활용</span>
+              </a>
+              <div class="post-card-body">
+                <h3 class="post-card-title"><a href="castle-app-live-sports-channels-guide.html">캐슬앱 실시간 스포츠 중계 및 라이브 TV 채널 끊김 없이 시청하기</a></h3>
+                <div class="post-card-footer">
+                  <span>2026-11-17</span>
+                  <a class="read-more-link" href="castle-app-live-sports-channels-guide.html">자세히 보기 &rarr;</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </article>
+
+      <aside class="post-sidebar" aria-label="전체 가이드 목록 사이드바">
+        <div class="sidebar-widget">
+          <h2 class="widget-title">전체 12개 공식 가이드</h2>
+          <ul class="sidebar-post-list">
+            <li><a class="" href="castle-app-apk-download-install.html"><span class="sidebar-num">01</span><span>캐슬앱(Castle App) 최신 버전 APK 다운로드 및 안드로이드 완벽 설치 가이드</span></a></li><li><a class="" href="castle-app-smart-tv-firestick-guide.html"><span class="sidebar-num">02</span><span>스마트 TV·안드로이드 TV·파이어스틱에 캐슬앱 설치 및 대화면 연동 방법</span></a></li><li><a class="" href="castle-app-pc-windows-mac-guide.html"><span class="sidebar-num">03</span><span>PC(윈도우 11·맥북 Mac)에서 캐슬앱 실행하기: 에뮬레이터 최적화 설정</span></a></li><li><a class="current" href="castle-app-korean-subtitle-audio-settings.html"><span class="sidebar-num">04</span><span>캐슬앱 한국어 자막 설정·다국어 오디오 트랙 변경 및 싱크 조절 총정리</span></a></li><li><a class="" href="castle-app-hd-4k-streaming-quality.html"><span class="sidebar-num">05</span><span>캐슬앱 1080p FHD·4K 고화질 재생 설정 및 모바일 데이터 절약 노하우</span></a></li><li><a class="" href="castle-app-offline-download-storage-guide.html"><span class="sidebar-num">06</span><span>캐슬앱 오프라인 동영상 저장 기능 및 외장 SD카드 용량 관리 가이드</span></a></li><li><a class="" href="castle-app-buffering-error-fix.html"><span class="sidebar-num">07</span><span>캐슬앱 무한 버퍼링·재생 멈춤·검은 화면 오류 원인과 즉시 해결법</span></a></li><li><a class="" href="castle-app-live-sports-channels-guide.html"><span class="sidebar-num">08</span><span>캐슬앱 실시간 스포츠 중계 및 라이브 TV 채널 끊김 없이 시청하기</span></a></li><li><a class="" href="castle-app-security-privacy-safety.html"><span class="sidebar-num">09</span><span>캐슬앱 보안성 검증·안전한 APK 판별법 및 개인정보 보호 체크리스트</span></a></li><li><a class="" href="castle-app-update-version-history-guide.html"><span class="sidebar-num">10</span><span>캐슬앱 버전 업데이트 방법·구버전 충돌 해결 및 데이터 백업 가이드</span></a></li><li><a class="" href="castle-app-ui-features-watchlist-guide.html"><span class="sidebar-num">11</span><span>캐슬앱 인터페이스 200% 활용법: 나만의 보관함·시청 기록·제스처 단축키</span></a></li><li><a class="" href="castle-app-faq-complete-guide.html"><span class="sidebar-num">12</span><span>캐슬앱(Castle App) 자주 묻는 질문(FAQ) 완벽 해설 및 기기 호환성 총정리</span></a></li>
+          </ul>
+        </div>
+        <div class="ad-slot-wrapper" data-ad-slot="sidebar-box" aria-label="사이드바 안내 배너"></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="ad-slot-wrapper" data-ad-slot="footer-banner" aria-label="하단 안내 배너"></div>
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand-logo">
+          <span class="brand-badge" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M4 19h16v2H4v-2zm2-3h12V8l-3 2-3-4-3 4-3-2v8z" fill="#ffffff"/>
+            </svg>
+          </span>
+          <span>캐슬앱 가이드</span>
+        </a>
+        <p class="footer-desc">
+          <strong>castlee.cc</strong>는 안드로이드, 스마트 TV, 파이어스틱, PC 사용자를 위한 한국어 캐슬앱(Castle App) 설치·자막·화질 최적화 및 오류 해결 기술 정보 포털입니다.
+        </p>
+      </div>
+      <div>
+        <h3 class="footer-heading">설치 및 디바이스 연동</h3>
+        <ul class="footer-links"><li><a href="castle-app-apk-download-install.html">캐슬앱(Castle App) 최신 버전 AP…</a></li><li><a href="castle-app-smart-tv-firestick-guide.html">스마트 TV·안드로이드 TV·파이어스틱에 캐…</a></li><li><a href="castle-app-pc-windows-mac-guide.html">PC(윈도우 11·맥북 Mac)에서 캐슬앱 …</a></li><li><a href="castle-app-korean-subtitle-audio-settings.html">캐슬앱 한국어 자막 설정·다국어 오디오 트랙…</a></li></ul>
+      </div>
+      <div>
+        <h3 class="footer-heading">화질·오프라인·오류 해결</h3>
+        <ul class="footer-links"><li><a href="castle-app-hd-4k-streaming-quality.html">캐슬앱 1080p FHD·4K 고화질 재생 …</a></li><li><a href="castle-app-offline-download-storage-guide.html">캐슬앱 오프라인 동영상 저장 기능 및 외장 …</a></li><li><a href="castle-app-buffering-error-fix.html">캐슬앱 무한 버퍼링·재생 멈춤·검은 화면 오…</a></li><li><a href="castle-app-live-sports-channels-guide.html">캐슬앱 실시간 스포츠 중계 및 라이브 TV …</a></li></ul>
+      </div>
+      <div>
+        <h3 class="footer-heading">보안·업데이트·활용 팁</h3>
+        <ul class="footer-links"><li><a href="castle-app-security-privacy-safety.html">캐슬앱 보안성 검증·안전한 APK 판별법 및…</a></li><li><a href="castle-app-update-version-history-guide.html">캐슬앱 버전 업데이트 방법·구버전 충돌 해결…</a></li><li><a href="castle-app-ui-features-watchlist-guide.html">캐슬앱 인터페이스 200% 활용법: 나만의 …</a></li><li><a href="castle-app-faq-complete-guide.html">캐슬앱(Castle App) 자주 묻는 질문…</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 <strong>castlee.cc</strong> — 캐슬앱 한국어 종합 정보 센터. All rights reserved.</span>
+      <span><a href="index.html">홈으로</a> · <a href="sitemap.xml">사이트맵</a> · <a href="castle-app-security-privacy-safety.html">보안 정책 안내</a></span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/ads.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>캐슬앱 보안성 검증·안전한 APK 판별법 및 개인정보 보호 체크리스트 | castlee.cc</title>
+  <meta name="description" content="사칭 가짜 APK로 인한 악성코드를 예방하기 위한 SHA-256 해시 검증법, 바이러스토탈 스캔 절차 및 불필요한 스마트폰 권한 차단 가이드를 안내합니다.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://castlee.cc/castle-app-security-privacy-safety.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="캐슬앱 공식 가이드 (Castlee.cc)">
+  <meta property="og:title" content="캐슬앱 보안성 검증·안전한 APK 판별법 및 개인정보 보호 체크리스트">
+  <meta property="og:description" content="사칭 가짜 APK로 인한 악성코드를 예방하기 위한 SHA-256 해시 검증법, 바이러스토탈 스캔 절차 및 불필요한 스마트폰 권한 차단 가이드를 안내합니다.">
+  <meta property="og:url" content="https://castlee.cc/castle-app-security-privacy-safety.html">
+  <meta property="og:image" content="https://castlee.cc/assets/images/post-09.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="캐슬앱 보안성 검증·안전한 APK 판별법 및 개인정보 보호 체크리스트">
+  <meta name="twitter:description" content="사칭 가짜 APK로 인한 악성코드를 예방하기 위한 SHA-256 해시 검증법, 바이러스토탈 스캔 절차 및 불필요한 스마트폰 권한 차단 가이드를 안내합니다.">
+  <meta name="twitter:image" content="https://castlee.cc/assets/images/post-09.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://castlee.cc/castle-app-security-privacy-safety.html#article", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://castlee.cc/castle-app-security-privacy-safety.html"}, "headline": "캐슬앱 보안성 검증·안전한 APK 판별법 및 개인정보 보호 체크리스트", "description": "사칭 가짜 APK로 인한 악성코드를 예방하기 위한 SHA-256 해시 검증법, 바이러스토탈 스캔 절차 및 불필요한 스마트폰 권한 차단 가이드를 안내합니다.", "image": "https://castlee.cc/assets/images/post-09.svg", "inLanguage": "ko-KR", "datePublished": "2026-11-18", "dateModified": "2026-11-22", "author": {"@type": "Organization", "name": "Castlee.cc 기술 에디터팀", "url": "https://castlee.cc/"}, "publisher": {"@type": "Organization", "name": "Castlee.cc", "url": "https://castlee.cc/", "logo": {"@type": "ImageObject", "url": "https://castlee.cc/assets/images/post-01.svg"}}}, {"@type": "BreadcrumbList", "@id": "https://castlee.cc/castle-app-security-privacy-safety.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://castlee.cc/"}, {"@type": "ListItem", "position": 2, "name": "보안·안전", "item": "https://castlee.cc/#guides"}, {"@type": "ListItem", "position": 3, "name": "캐슬앱 보안성 검증·안전한 APK 판별법 및 개인정보 보호 체크리스트", "item": "https://castlee.cc/castle-app-security-privacy-safety.html"}]}]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문 바로가기</a>
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="brand-logo" aria-label="캐슬앱 공식 가이드 홈으로 이동">
+      <span class="brand-badge" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M4 19h16v2H4v-2zm2-3h12V8l-3 2-3-4-3 4-3-2v8z" fill="#ffffff"/>
+        </svg>
+      </span>
+      <span>캐슬앱 가이드 <span class="brand-domain">castlee.cc</span></span>
+    </a>
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-expanded="false" aria-controls="mainNav" aria-label="메뉴 열기">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="주요 메뉴">
+      <a href="index.html" class="nav-link ">홈</a>
+      <a href="castle-app-apk-download-install.html" class="nav-link ">APK 설치</a>
+      <a href="castle-app-smart-tv-firestick-guide.html" class="nav-link ">스마트 TV</a>
+      <a href="castle-app-korean-subtitle-audio-settings.html" class="nav-link ">한국어 자막</a>
+      <a href="castle-app-buffering-error-fix.html" class="nav-link ">오류 해결</a>
+      <a href="castle-app-faq-complete-guide.html" class="nav-link ">FAQ</a>
+      <a href="castle-app-apk-download-install.html" class="nav-cta">최신 가이드 보기</a>
+    </nav>
+  </div>
+</header>
+
+  <main id="main-content" class="container">
+    <nav class="breadcrumb-nav" aria-label="경로 안내">
+      <ol class="breadcrumb-list">
+        <li><a href="index.html">홈 (castlee.cc)</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="index.html#guides">보안·안전</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page">캐슬앱 보안성 검증·안전한 APK 판별법 및 개인정보 보호 체크리스트</li>
+      </ol>
+    </nav>
+
+    <div class="ad-slot-wrapper" data-ad-slot="header-top" aria-label="상단 안내 배너"></div>
+
+    <div class="post-layout">
+      <article class="post-main-card">
+        <div class="post-header-meta">
+          <span class="post-badge">보안·안전</span>
+          <time datetime="2026-11-18">발행일: 2026-11-18</time>
+          <span>·</span>
+          <span>최종 업데이트: 2026-11-22</span>
+          <span>·</span>
+          <span>7분 읽기</span>
+        </div>
+
+        <h1 class="post-h1">캐슬앱 보안성 검증·안전한 APK 판별법 및 개인정보 보호 체크리스트</h1>
+        <p class="post-lead">공식 스토어 외부에서 배포되는 서드파티 애플리케이션을 사용할 때 가장 중요한 원칙은 출처의 신뢰성을 직접 검증하고 기기에 꼭 필요한 최소한의 권한만 부여하는 것입니다. 안심하고 스마트 기기를 사용할 수 있는 실전 보안 수칙을 정리했습니다.</p>
+
+        <div class="post-hero-banner">
+          <img class="lazy-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23161f33'/%3E%3C/svg%3E" data-src="assets/images/post-09.svg" alt="캐슬앱 보안성 검증·안전한 APK 판별법 및 개인정보 보호 체크리스트" loading="lazy" width="800" height="450">
+        </div>
+
+        <nav class="toc-box" aria-label="본문 목차">
+          <div class="toc-title">목차 (빠른 이동)</div>
+          <ol class="toc-list">
+            <li><a href="#section-1">정식 빌드 APK와 변조·사칭 가짜 파일 구별하는 핵심 기준</a></li><li><a href="#section-2">안드로이드 앱 권한(Permission) 최소 허용 원칙 적용하기</a></li><li><a href="#section-3">네트워크 프라이버시 강화 및 광고 추적 제한 설정</a></li><li><a href="#section-4">안전한 업데이트 주기와 클린 유지보수 습관</a></li>
+          </ol>
+        </nav>
+
+        <div class="article-prose">
+          <section id="section-1"><h2>정식 빌드 APK와 변조·사칭 가짜 파일 구별하는 핵심 기준</h2><p>인기 스트리밍 앱의 이름을 도용한 가짜 설치 파일들은 주로 팝업 광고가 과도하게 붙은 비검증 블로그나 출처 불명의 메신저 링크를 통해 유포됩니다. 가장 먼저 눈여겨봐야 할 지표는 파일 크기와 확장자입니다. 정상적인 캐슬앱 설치 패키지는 미디어 코덱 라이브러리를 포함해 통상 수십 메가바이트 단위의 `.apk` 파일로 제공되는 반면, 용량이 비정상적으로 작은 1~3MB 남짓한 파일이나 `.exe`, `.zip.apk` 형태의 파일은 애드웨어 트로이목마일 확률이 높으므로 절대 실행해서는 안 됩니다.</p><p>설치 버튼을 누르기 전 무료 보안 검증 플랫폼인 바이러스토탈(VirusTotal) 웹사이트에 다운로드한 APK 파일을 업로드해 보는 습관을 들이면 매우 안전합니다. 수십 개의 글로벌 백신 엔진 검사 결과와 개발자 인증서 서명 지문(SHA-256 해시) 일치 여부를 단 10초 만에 투명하게 확인할 수 있습니다.</p></section><section id="section-2"><h2>안드로이드 앱 권한(Permission) 최소 허용 원칙 적용하기</h2><p>영상 스트리밍 애플리케이션이 본연의 기능을 수행하기 위해 필요한 시스템 권한은 인터넷 네트워크 접속, 오프라인 저장을 위한 미디어 파일 읽기·쓰기, 그리고 선택적인 푸시 알림 권한뿐입니다.</p><p>만약 설치 직후나 실행 중에 주소록(연락처) 열람, 문자메시지(SMS) 읽기, 전화 걸기 및 통화 상태 관리, 정밀 GPS 위치 정보, 카메라 및 마이크 녹음 같은 민감한 개인정보 권한을 요구한다면 이는 정상적인 미디어 앱의 범주를 벗어난 동작이므로 즉시 거부하고 앱을 삭제해야 합니다.</p><ul><li>권한 관리자 수시 점검: 설정 → 개인정보 보호 → 권한 관리자에서 캐슬앱에 부여된 항목 재확인</li><li>사용하지 않는 앱 권한 자동 삭제: 안드로이드 기본 보안 옵션인 장기간 미사용 시 권한 회수 스위치 활성화</li><li>플레이 프로텍트 상시 가동: 구글 플레이 스토어 설정에서 앱 스캔 기능을 끄지 않고 실시간 감시 유지</li><li>공용 와이파이 주의: 카페·공항 등 개방형 무료 Wi-Fi 접속 시 개인 계정 정보 입력 자제</li></ul>
+                <figure class="diagram-figure">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 856 232" role="img" aria-label="그림 9. 안전한 APK 검증 및 안드로이드 샌드박스 최소 권한 방어 체계">
+  <rect width="856" height="232" rx="16" fill="#0b1120"/>
+  <text x="26" y="34" fill="#94a3b8" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="13.5" font-weight="700">CASTLEE.CC ARCHITECTURE &amp; WORKFLOW DIAGRAM</text>
+  
+    <g>
+      <rect x="24" y="54" width="184" height="142" rx="14" fill="#161f33" stroke="#22c55e" stroke-opacity="0.55" stroke-width="1.5"/>
+      <circle cx="54" cy="84" r="14" fill="#22c55e" fill-opacity="0.25"/>
+      <text x="54" y="89" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="800">1</text>
+      <text x="40" y="122" fill="#f8fafc" font-size="14.5" font-weight="700">파일 진위 대조</text>
+      <text x="40" y="150" fill="#cbd5e1" font-size="12.2">정상 용량(45~65MB) </text>
+      <text x="40" y="170" fill="#cbd5e1" font-size="12.2">및 패키지명·디지털 서명 확인</text>
+    </g><line x1="210" y1="125" x2="230" y2="125" stroke="#22c55e" stroke-width="2.5"/><polygon points="228,119 236,125 228,131" fill="#22c55e"/>
+    <g>
+      <rect x="232" y="54" width="184" height="142" rx="14" fill="#161f33" stroke="#22c55e" stroke-opacity="0.55" stroke-width="1.5"/>
+      <circle cx="262" cy="84" r="14" fill="#22c55e" fill-opacity="0.25"/>
+      <text x="262" y="89" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="800">2</text>
+      <text x="248" y="122" fill="#f8fafc" font-size="14.5" font-weight="700">멀티 엔진 사전 검사</text>
+      <text x="248" y="150" fill="#cbd5e1" font-size="12.2">설치 전 VirusTotal</text>
+      <text x="248" y="170" fill="#cbd5e1" font-size="12.2"> 온라인 스캔으로 무결성 입증</text>
+    </g><line x1="418" y1="125" x2="438" y2="125" stroke="#22c55e" stroke-width="2.5"/><polygon points="436,119 444,125 436,131" fill="#22c55e"/>
+    <g>
+      <rect x="440" y="54" width="184" height="142" rx="14" fill="#161f33" stroke="#22c55e" stroke-opacity="0.55" stroke-width="1.5"/>
+      <circle cx="470" cy="84" r="14" fill="#22c55e" fill-opacity="0.25"/>
+      <text x="470" y="89" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="800">3</text>
+      <text x="456" y="122" fill="#f8fafc" font-size="14.5" font-weight="700">최소 권한 통제</text>
+      <text x="456" y="150" fill="#cbd5e1" font-size="12.2">연락처·통화기록·SMS·위치</text>
+      <text x="456" y="170" fill="#cbd5e1" font-size="12.2"> 등 불필요 권한 전면 차단</text>
+    </g><line x1="626" y1="125" x2="646" y2="125" stroke="#22c55e" stroke-width="2.5"/><polygon points="644,119 652,125 644,131" fill="#22c55e"/>
+    <g>
+      <rect x="648" y="54" width="184" height="142" rx="14" fill="#161f33" stroke="#22c55e" stroke-opacity="0.55" stroke-width="1.5"/>
+      <circle cx="678" cy="84" r="14" fill="#22c55e" fill-opacity="0.25"/>
+      <text x="678" y="89" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="800">4</text>
+      <text x="664" y="122" fill="#f8fafc" font-size="14.5" font-weight="700">사후 보안 복원</text>
+      <text x="664" y="150" fill="#cbd5e1" font-size="12.2">설치 완료 직후 브라우저 알</text>
+      <text x="664" y="170" fill="#cbd5e1" font-size="12.2"> 수 없는 앱 허용 즉시 해제</text>
+    </g>
+</svg>
+                  <figcaption class="diagram-caption">그림 9. 안전한 APK 검증 및 안드로이드 샌드박스 최소 권한 방어 체계</figcaption>
+                </figure>
+                <div class="ad-slot-wrapper" data-ad-slot="in-content" aria-label="본문 추천 배너"></div></section><section id="section-3"><h2>네트워크 프라이버시 강화 및 광고 추적 제한 설정</h2><p>온라인 스트리밍 이용 시 자신의 IP 노출이나 맞춤형 트래킹 쿠키 수집을 최소화하고 싶다면 안드로이드 개인정보 설정의 광고 ID 삭제 또는 재설정 기능을 활용하는 것이 좋습니다. 이를 통해 서드파티 분석 모듈이 사용자의 시청 패턴을 교차 추적하는 것을 효과적으로 차단할 수 있습니다.</p><p>아울러 암호화된 DNS(DNS over HTTPS / DNS over TLS)를 활성화해 두면 통신 구간에서 어떤 미디어 서버에 접속하는지 평문 도메인 쿼리가 외부에 노출되지 않아 보안성과 속도 두 마리 토끼를 동시에 잡을 수 있습니다.</p></section><section id="section-4"><h2>안전한 업데이트 주기와 클린 유지보수 습관</h2><p>보안 패치와 프로토콜 암호화 모듈은 신규 버전을 통해 지속적으로 개선됩니다. 구버전을 수년째 방치하기보다 분기별로 배포되는 공식 안정화 빌드의 변경 내역을 확인한 뒤 기존 서명과 동일한 정식 패키지로만 업데이트를 진행하시기 바랍니다.</p><p>설치가 완료된 직후에는 브라우저에 임시로 허용했던 알 수 없는 앱 설치 스위치를 다시 꺼두는 것만으로도 웹 서핑 중 의도치 않은 자동 드라이브바이 다운로드를 원천 차단할 수 있습니다.</p></section>
+          
+        <div class="info-callout">
+          <div class="info-callout-title">함께 읽으면 좋은 필수 연관 가이드</div>
+          <p style="margin-bottom:8px;">보다 완벽한 스트리밍 환경 구성을 위해 아래 단계별 가이드를 이어서 확인해 보세요.</p>
+          <ul style="margin-bottom:0;">
+            <li><a href="castle-app-update-version-history-guide.html" style="color:#a5b4fc;font-weight:700;">캐슬앱 버전 업데이트 방법·구버전 충돌 해결 및 데이터 백업 가이드</a></li>
+            <li><a href="castle-app-ui-features-watchlist-guide.html" style="color:#a5b4fc;font-weight:700;">캐슬앱 인터페이스 200% 활용법: 나만의 보관함·시청 기록·제스처 단축키</a></li>
+          </ul>
+        </div>
+        </div>
+
+        <nav class="post-prev-next" aria-label="이전 및 다음 포스트 이동">
+          <a class="pn-card" href="castle-app-live-sports-channels-guide.html">
+            <span class="pn-label">&larr; 이전 가이드</span>
+            <span class="pn-title">캐슬앱 실시간 스포츠 중계 및 라이브 TV 채널 끊김 없이 시청하기</span>
+          </a>
+          <a class="pn-card" href="castle-app-update-version-history-guide.html">
+            <span class="pn-label">다음 가이드 &rarr;</span>
+            <span class="pn-title">캐슬앱 버전 업데이트 방법·구버전 충돌 해결 및 데이터 백업 가이드</span>
+          </a>
+        </nav>
+
+        <section class="related-posts-section" aria-label="관련 추천 포스트">
+          <h2 class="section-title" style="font-size:1.35rem;margin-bottom:6px;">추천 연관 가이드</h2>
+          <p class="section-subtitle">주제별로 연결된 심화 설정 매뉴얼을 확인해 보세요.</p>
+          <div class="related-grid">
+            
+            <article class="post-card">
+              <a href="castle-app-update-version-history-guide.html" class="post-card-thumb">
+                <img class="lazy-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23161f33'/%3E%3C/svg%3E" data-src="assets/images/post-10.svg" alt="캐슬앱 버전 업데이트 방법·구버전 충돌 해결 및 데이터 백업 가이드" loading="lazy" width="800" height="450">
+                <span class="post-category-tag">설치 가이드</span>
+              </a>
+              <div class="post-card-body">
+                <h3 class="post-card-title"><a href="castle-app-update-version-history-guide.html">캐슬앱 버전 업데이트 방법·구버전 충돌 해결 및 데이터 백업 가이드</a></h3>
+                <div class="post-card-footer">
+                  <span>2026-11-19</span>
+                  <a class="read-more-link" href="castle-app-update-version-history-guide.html">자세히 보기 &rarr;</a>
+                </div>
+              </div>
+            </article>
+            <article class="post-card">
+              <a href="castle-app-ui-features-watchlist-guide.html" class="post-card-thumb">
+                <img class="lazy-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23161f33'/%3E%3C/svg%3E" data-src="assets/images/post-11.svg" alt="캐슬앱 인터페이스 200% 활용법: 나만의 보관함·시청 기록·제스처 단축키" loading="lazy" width="800" height="450">
+                <span class="post-category-tag">기능 활용</span>
+              </a>
+              <div class="post-card-body">
+                <h3 class="post-card-title"><a href="castle-app-ui-features-watchlist-guide.html">캐슬앱 인터페이스 200% 활용법: 나만의 보관함·시청 기록·제스처 단축키</a></h3>
+                <div class="post-card-footer">
+                  <span>2026-11-20</span>
+                  <a class="read-more-link" href="castle-app-ui-features-watchlist-guide.html">자세히 보기 &rarr;</a>
+                </div>
+              </div>
+            </article>
+            <article class="post-card">
+              <a href="castle-app-faq-complete-guide.html" class="post-card-thumb">
+                <img class="lazy-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23161f33'/%3E%3C/svg%3E" data-src="assets/images/post-12.svg" alt="캐슬앱(Castle App) 자주 묻는 질문(FAQ) 완벽 해설 및 기기 호환성 총정리" loading="lazy" width="800" height="450">
+                <span class="post-category-tag">오류 해결</span>
+              </a>
+              <div class="post-card-body">
+                <h3 class="post-card-title"><a href="castle-app-faq-complete-guide.html">캐슬앱(Castle App) 자주 묻는 질문(FAQ) 완벽 해설 및 기기 호환성 총정리</a></h3>
+                <div class="post-card-footer">
+                  <span>2026-11-21</span>
+                  <a class="read-more-link" href="castle-app-faq-complete-guide.html">자세히 보기 &rarr;</a>
+                </div>
+              </div>
+            </article>
+            <article class="post-card">
+              <a href="castle-app-apk-download-install.html" class="post-card-thumb">
+                <img class="lazy-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23161f33'/%3E%3C/svg%3E" data-src="assets/images/post-01.svg" alt="캐슬앱(Castle App) 최신 버전 APK 다운로드 및 안드로이드 완벽 설치 가이드" loading="lazy" width="800" height="450">
+                <span class="post-category-tag">설치 가이드</span>
+              </a>
+              <div class="post-card-body">
+                <h3 class="post-card-title"><a href="castle-app-apk-download-install.html">캐슬앱(Castle App) 최신 버전 APK 다운로드 및 안드로이드 완벽 설치 가이드</a></h3>
+                <div class="post-card-footer">
+                  <span>2026-11-10</span>
+                  <a class="read-more-link" href="castle-app-apk-download-install.html">자세히 보기 &rarr;</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </article>
+
+      <aside class="post-sidebar" aria-label="전체 가이드 목록 사이드바">
+        <div class="sidebar-widget">
+          <h2 class="widget-title">전체 12개 공식 가이드</h2>
+          <ul class="sidebar-post-list">
+            <li><a class="" href="castle-app-apk-download-install.html"><span class="sidebar-num">01</span><span>캐슬앱(Castle App) 최신 버전 APK 다운로드 및 안드로이드 완벽 설치 가이드</span></a></li><li><a class="" href="castle-app-smart-tv-firestick-guide.html"><span class="sidebar-num">02</span><span>스마트 TV·안드로이드 TV·파이어스틱에 캐슬앱 설치 및 대화면 연동 방법</span></a></li><li><a class="" href="castle-app-pc-windows-mac-guide.html"><span class="sidebar-num">03</span><span>PC(윈도우 11·맥북 Mac)에서 캐슬앱 실행하기: 에뮬레이터 최적화 설정</span></a></li><li><a class="" href="castle-app-korean-subtitle-audio-settings.html"><span class="sidebar-num">04</span><span>캐슬앱 한국어 자막 설정·다국어 오디오 트랙 변경 및 싱크 조절 총정리</span></a></li><li><a class="" href="castle-app-hd-4k-streaming-quality.html"><span class="sidebar-num">05</span><span>캐슬앱 1080p FHD·4K 고화질 재생 설정 및 모바일 데이터 절약 노하우</span></a></li><li><a class="" href="castle-app-offline-download-storage-guide.html"><span class="sidebar-num">06</span><span>캐슬앱 오프라인 동영상 저장 기능 및 외장 SD카드 용량 관리 가이드</span></a></li><li><a class="" href="castle-app-buffering-error-fix.html"><span class="sidebar-num">07</span><span>캐슬앱 무한 버퍼링·재생 멈춤·검은 화면 오류 원인과 즉시 해결법</span></a></li><li><a class="" href="castle-app-live-sports-channels-guide.html"><span class="sidebar-num">08</span><span>캐슬앱 실시간 스포츠 중계 및 라이브 TV 채널 끊김 없이 시청하기</span></a></li><li><a class="current" href="castle-app-security-privacy-safety.html"><span class="sidebar-num">09</span><span>캐슬앱 보안성 검증·안전한 APK 판별법 및 개인정보 보호 체크리스트</span></a></li><li><a class="" href="castle-app-update-version-history-guide.html"><span class="sidebar-num">10</span><span>캐슬앱 버전 업데이트 방법·구버전 충돌 해결 및 데이터 백업 가이드</span></a></li><li><a class="" href="castle-app-ui-features-watchlist-guide.html"><span class="sidebar-num">11</span><span>캐슬앱 인터페이스 200% 활용법: 나만의 보관함·시청 기록·제스처 단축키</span></a></li><li><a class="" href="castle-app-faq-complete-guide.html"><span class="sidebar-num">12</span><span>캐슬앱(Castle App) 자주 묻는 질문(FAQ) 완벽 해설 및 기기 호환성 총정리</span></a></li>
+          </ul>
+        </div>
+        <div class="ad-slot-wrapper" data-ad-slot="sidebar-box" aria-label="사이드바 안내 배너"></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="ad-slot-wrapper" data-ad-slot="footer-banner" aria-label="하단 안내 배너"></div>
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand-logo">
+          <span class="brand-badge" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M4 19h16v2H4v-2zm2-3h12V8l-3 2-3-4-3 4-3-2v8z" fill="#ffffff"/>
+            </svg>
+          </span>
+          <span>캐슬앱 가이드</span>
+        </a>
+        <p class="footer-desc">
+          <strong>castlee.cc</strong>는 안드로이드, 스마트 TV, 파이어스틱, PC 사용자를 위한 한국어 캐슬앱(Castle App) 설치·자막·화질 최적화 및 오류 해결 기술 정보 포털입니다.
+        </p>
+      </div>
+      <div>
+        <h3 class="footer-heading">설치 및 디바이스 연동</h3>
+        <ul class="footer-links"><li><a href="castle-app-apk-download-install.html">캐슬앱(Castle App) 최신 버전 AP…</a></li><li><a href="castle-app-smart-tv-firestick-guide.html">스마트 TV·안드로이드 TV·파이어스틱에 캐…</a></li><li><a href="castle-app-pc-windows-mac-guide.html">PC(윈도우 11·맥북 Mac)에서 캐슬앱 …</a></li><li><a href="castle-app-korean-subtitle-audio-settings.html">캐슬앱 한국어 자막 설정·다국어 오디오 트랙…</a></li></ul>
+      </div>
+      <div>
+        <h3 class="footer-heading">화질·오프라인·오류 해결</h3>
+        <ul class="footer-links"><li><a href="castle-app-hd-4k-streaming-quality.html">캐슬앱 1080p FHD·4K 고화질 재생 …</a></li><li><a href="castle-app-offline-download-storage-guide.html">캐슬앱 오프라인 동영상 저장 기능 및 외장 …</a></li><li><a href="castle-app-buffering-error-fix.html">캐슬앱 무한 버퍼링·재생 멈춤·검은 화면 오…</a></li><li><a href="castle-app-live-sports-channels-guide.html">캐슬앱 실시간 스포츠 중계 및 라이브 TV …</a></li></ul>
+      </div>
+      <div>
+        <h3 class="footer-heading">보안·업데이트·활용 팁</h3>
+        <ul class="footer-links"><li><a href="castle-app-security-privacy-safety.html">캐슬앱 보안성 검증·안전한 APK 판별법 및…</a></li><li><a href="castle-app-update-version-history-guide.html">캐슬앱 버전 업데이트 방법·구버전 충돌 해결…</a></li><li><a href="castle-app-ui-features-watchlist-guide.html">캐슬앱 인터페이스 200% 활용법: 나만의 …</a></li><li><a href="castle-app-faq-complete-guide.html">캐슬앱(Castle App) 자주 묻는 질문…</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 <strong>castlee.cc</strong> — 캐슬앱 한국어 종합 정보 센터. All rights reserved.</span>
+      <span><a href="index.html">홈으로</a> · <a href="sitemap.xml">사이트맵</a> · <a href="castle-app-security-privacy-safety.html">보안 정책 안내</a></span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/ads.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>캐슬앱 버전 업데이트 방법·구버전 충돌 해결 및 데이터 백업 가이드 | castlee.cc</title>
+  <meta name="description" content="시청 기록과 즐겨찾기 목록을 안전하게 유지하면서 캐슬앱을 최신 버전으로 업데이트하는 방법과 서명 불일치 오류 해결 절차를 안내합니다.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://castlee.cc/castle-app-update-version-history-guide.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="캐슬앱 공식 가이드 (Castlee.cc)">
+  <meta property="og:title" content="캐슬앱 버전 업데이트 방법·구버전 충돌 해결 및 데이터 백업 가이드">
+  <meta property="og:description" content="시청 기록과 즐겨찾기 목록을 안전하게 유지하면서 캐슬앱을 최신 버전으로 업데이트하는 방법과 서명 불일치 오류 해결 절차를 안내합니다.">
+  <meta property="og:url" content="https://castlee.cc/castle-app-update-version-history-guide.html">
+  <meta property="og:image" content="https://castlee.cc/assets/images/post-10.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="캐슬앱 버전 업데이트 방법·구버전 충돌 해결 및 데이터 백업 가이드">
+  <meta name="twitter:description" content="시청 기록과 즐겨찾기 목록을 안전하게 유지하면서 캐슬앱을 최신 버전으로 업데이트하는 방법과 서명 불일치 오류 해결 절차를 안내합니다.">
+  <meta name="twitter:image" content="https://castlee.cc/assets/images/post-10.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://castlee.cc/castle-app-update-version-history-guide.html#article", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://castlee.cc/castle-app-update-version-history-guide.html"}, "headline": "캐슬앱 버전 업데이트 방법·구버전 충돌 해결 및 데이터 백업 가이드", "description": "시청 기록과 즐겨찾기 목록을 안전하게 유지하면서 캐슬앱을 최신 버전으로 업데이트하는 방법과 서명 불일치 오류 해결 절차를 안내합니다.", "image": "https://castlee.cc/assets/images/post-10.svg", "inLanguage": "ko-KR", "datePublished": "2026-11-19", "dateModified": "2026-11-22", "author": {"@type": "Organization", "name": "Castlee.cc 기술 에디터팀", "url": "https://castlee.cc/"}, "publisher": {"@type": "Organization", "name": "Castlee.cc", "url": "https://castlee.cc/", "logo": {"@type": "ImageObject", "url": "https://castlee.cc/assets/images/post-01.svg"}}}, {"@type": "BreadcrumbList", "@id": "https://castlee.cc/castle-app-update-version-history-guide.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://castlee.cc/"}, {"@type": "ListItem", "position": 2, "name": "설치 가이드", "item": "https://castlee.cc/#guides"}, {"@type": "ListItem", "position": 3, "name": "캐슬앱 버전 업데이트 방법·구버전 충돌 해결 및 데이터 백업 가이드", "item": "https://castlee.cc/castle-app-update-version-history-guide.html"}]}]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문 바로가기</a>
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="brand-logo" aria-label="캐슬앱 공식 가이드 홈으로 이동">
+      <span class="brand-badge" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M4 19h16v2H4v-2zm2-3h12V8l-3 2-3-4-3 4-3-2v8z" fill="#ffffff"/>
+        </svg>
+      </span>
+      <span>캐슬앱 가이드 <span class="brand-domain">castlee.cc</span></span>
+    </a>
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-expanded="false" aria-controls="mainNav" aria-label="메뉴 열기">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="주요 메뉴">
+      <a href="index.html" class="nav-link ">홈</a>
+      <a href="castle-app-apk-download-install.html" class="nav-link ">APK 설치</a>
+      <a href="castle-app-smart-tv-firestick-guide.html" class="nav-link ">스마트 TV</a>
+      <a href="castle-app-korean-subtitle-audio-settings.html" class="nav-link ">한국어 자막</a>
+      <a href="castle-app-buffering-error-fix.html" class="nav-link ">오류 해결</a>
+      <a href="castle-app-faq-complete-guide.html" class="nav-link ">FAQ</a>
+      <a href="castle-app-apk-download-install.html" class="nav-cta">최신 가이드 보기</a>
+    </nav>
+  </div>
+</header>
+
+  <main id="main-content" class="container">
+    <nav class="breadcrumb-nav" aria-label="경로 안내">
+      <ol class="breadcrumb-list">
+        <li><a href="index.html">홈 (castlee.cc)</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="index.html#guides">설치 가이드</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page">캐슬앱 버전 업데이트 방법·구버전 충돌 해결 및 데이터 백업 가이드</li>
+      </ol>
+    </nav>
+
+    <div class="ad-slot-wrapper" data-ad-slot="header-top" aria-label="상단 안내 배너"></div>
+
+    <div class="post-layout">
+      <article class="post-main-card">
+        <div class="post-header-meta">
+          <span class="post-badge">설치 가이드</span>
+          <time datetime="2026-11-19">발행일: 2026-11-19</time>
+          <span>·</span>
+          <span>최종 업데이트: 2026-11-22</span>
+          <span>·</span>
+          <span>6분 읽기</span>
+        </div>
+
+        <h1 class="post-h1">캐슬앱 버전 업데이트 방법·구버전 충돌 해결 및 데이터 백업 가이드</h1>
+        <p class="post-lead">스트리밍 플랫폼은 새로운 코덱 지원, 자막 검색 API 개선, UI 반응성 향상을 위해 정기적으로 빌드를 갱신합니다. 기존에 쌓아둔 관심 작품 리스트와 시청 이어보기 기록을 잃지 않고 매끄럽게 최신 버전으로 업그레이드하는 노하우를 살펴보겠습니다.</p>
+
+        <div class="post-hero-banner">
+          <img class="lazy-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23161f33'/%3E%3C/svg%3E" data-src="assets/images/post-10.svg" alt="캐슬앱 버전 업데이트 방법·구버전 충돌 해결 및 데이터 백업 가이드" loading="lazy" width="800" height="450">
+        </div>
+
+        <nav class="toc-box" aria-label="본문 목차">
+          <div class="toc-title">목차 (빠른 이동)</div>
+          <ol class="toc-list">
+            <li><a href="#section-1">현재 설치된 버전 확인 및 인앱 업데이트 체크 방법</a></li><li><a href="#section-2">앱이 설치되지 않음(패키지 충돌) 메시지 완벽 해결</a></li><li><a href="#section-3">최신 버전에서 달라진 핵심 성능 및 플레이어 개선점</a></li><li><a href="#section-4">구형 저사양 기기에서 구버전 유지가 유리한 경우</a></li>
+          </ol>
+        </nav>
+
+        <div class="article-prose">
+          <section id="section-1"><h2>현재 설치된 버전 확인 및 인앱 업데이트 체크 방법</h2><p>사용 중인 캐슬앱이 최신 빌드인지 확인하려면 앱 우측 하단 프로필(내 정보) 메뉴로 이동한 뒤 설정 하단의 버전 정보(About / Check for Updates) 항목을 탭합니다. 새로운 안정화 패치가 등록되어 있을 경우 변경 사항 요약(Changelog)과 함께 즉시 업데이트 다운로드 안내 창이 표시됩니다.</p><p>인앱 업데이터를 통해 내려받으면 기존 앱과 동일한 개발자 서명 키를 가진 패키지가 수신되므로, 별도로 기존 앱을 지울 필요 없이 덮어쓰기(Over-install) 방식으로 10초 이내에 깔끔하게 업그레이드가 마무리됩니다.</p></section><section id="section-2"><h2>앱이 설치되지 않음(패키지 충돌) 메시지 완벽 해결</h2><p>수동으로 받은 신규 APK를 실행했을 때 기존 패키지와 충돌하여 앱이 설치되지 않았습니다라는 문구가 나타나는 가장 흔한 원인은 두 가지입니다. 첫째는 이미 더 높은 버전 번호가 깔려 있는 상태에서 낮은 버전을 덮어쓰려 했을 때(다운그레이드 제한)이고, 둘째는 이전에 설치했던 파일과 새로 받은 파일의 디지털 인증서 서명이 서로 다를 때입니다.</p><p>이 문제를 해결하려면 먼저 중요 관심 작품 제목을 메모하거나 계정 동기화 기능을 통해 백업한 뒤, 기존에 설치된 캐슬앱을 완전히 제거(Uninstall)하고 기기를 한 번 재부팅한 다음 새 설치 파일을 실행하면 충돌 없이 즉시 설치됩니다.</p><ul><li>계정 기반 북마크 동기화: 기기 변경이나 클린 재설치 전 프로필 동기화 상태 우선 점검</li><li>저장 공간 여유분 체크: 덮어쓰기 설치 시 기존 용량의 약 2배에 해당하는 임시 압축 해제 여유 공간 필요</li><li>메이저 업데이트 후 캐시 비우기: UI 개편이 포함된 대규모 판올림 직후 구버전 썸네일 캐시 정리 권장</li><li>베타 빌드보다 정식(Stable) 빌드 권장: 일상적인 TV·모바일 시청 환경에서는 검증된 정식 버전 선택</li></ul>
+                <figure class="diagram-figure">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 856 232" role="img" aria-label="그림 10. 시청 데이터 보존 덮어쓰기 업데이트 및 패키지 충돌 복구 프로세스">
+  <rect width="856" height="232" rx="16" fill="#0b1120"/>
+  <text x="26" y="34" fill="#94a3b8" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="13.5" font-weight="700">CASTLEE.CC ARCHITECTURE &amp; WORKFLOW DIAGRAM</text>
+  
+    <g>
+      <rect x="24" y="54" width="184" height="142" rx="14" fill="#161f33" stroke="#3b82f6" stroke-opacity="0.55" stroke-width="1.5"/>
+      <circle cx="54" cy="84" r="14" fill="#3b82f6" fill-opacity="0.25"/>
+      <text x="54" y="89" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="800">1</text>
+      <text x="40" y="122" fill="#f8fafc" font-size="14.5" font-weight="700">현재 빌드 번호 확인</text>
+      <text x="40" y="150" fill="#cbd5e1" font-size="12.2">설정 → 앱 정보에서 현재 </text>
+      <text x="40" y="170" fill="#cbd5e1" font-size="12.2">설치된 버전 코드 조회</text>
+    </g><line x1="210" y1="125" x2="230" y2="125" stroke="#3b82f6" stroke-width="2.5"/><polygon points="228,119 236,125 228,131" fill="#3b82f6"/>
+    <g>
+      <rect x="232" y="54" width="184" height="142" rx="14" fill="#161f33" stroke="#3b82f6" stroke-opacity="0.55" stroke-width="1.5"/>
+      <circle cx="262" cy="84" r="14" fill="#3b82f6" fill-opacity="0.25"/>
+      <text x="262" y="89" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="800">2</text>
+      <text x="248" y="122" fill="#f8fafc" font-size="14.5" font-weight="700">동일 서명 패키지 수신</text>
+      <text x="248" y="150" fill="#cbd5e1" font-size="12.2">정식 릴리즈 채널에서 최신 </text>
+      <text x="248" y="170" fill="#cbd5e1" font-size="12.2">안정화 APK 확보</text>
+    </g><line x1="418" y1="125" x2="438" y2="125" stroke="#3b82f6" stroke-width="2.5"/><polygon points="436,119 444,125 436,131" fill="#3b82f6"/>
+    <g>
+      <rect x="440" y="54" width="184" height="142" rx="14" fill="#161f33" stroke="#3b82f6" stroke-opacity="0.55" stroke-width="1.5"/>
+      <circle cx="470" cy="84" r="14" fill="#3b82f6" fill-opacity="0.25"/>
+      <text x="470" y="89" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="800">3</text>
+      <text x="456" y="122" fill="#f8fafc" font-size="14.5" font-weight="700">덮어쓰기 업그레이드</text>
+      <text x="456" y="150" fill="#cbd5e1" font-size="12.2">기존 앱 삭제 없이 설치 실</text>
+      <text x="456" y="170" fill="#cbd5e1" font-size="12.2">행하여 시청 기록 유지</text>
+    </g><line x1="626" y1="125" x2="646" y2="125" stroke="#3b82f6" stroke-width="2.5"/><polygon points="644,119 652,125 644,131" fill="#3b82f6"/>
+    <g>
+      <rect x="648" y="54" width="184" height="142" rx="14" fill="#161f33" stroke="#3b82f6" stroke-opacity="0.55" stroke-width="1.5"/>
+      <circle cx="678" cy="84" r="14" fill="#3b82f6" fill-opacity="0.25"/>
+      <text x="678" y="89" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="800">4</text>
+      <text x="664" y="122" fill="#f8fafc" font-size="14.5" font-weight="700">마이그레이션 검증</text>
+      <text x="664" y="150" fill="#cbd5e1" font-size="12.2">즐겨찾기·오프라인 보관함 정</text>
+      <text x="664" y="170" fill="#cbd5e1" font-size="12.2">상 로드 및 캐시 정리</text>
+    </g>
+</svg>
+                  <figcaption class="diagram-caption">그림 10. 시청 데이터 보존 덮어쓰기 업데이트 및 패키지 충돌 복구 프로세스</figcaption>
+                </figure>
+                <div class="ad-slot-wrapper" data-ad-slot="in-content" aria-label="본문 추천 배너"></div></section><section id="section-3"><h2>최신 버전에서 달라진 핵심 성능 및 플레이어 개선점</h2><p>최근 업데이트된 빌드에서는 안드로이드 14 및 최신 운영체제의 세분화된 미디어 권한 정책 완벽 대응, 초기 콜드 스타트(앱 첫 구동) 시간 약 35% 단축, 그리고 멀티 자막 트랙 파싱 안정성 강화가 중점적으로 이루어졌습니다.</p><p>특히 고해상도 탐색 바(Seek Bar) 썸네일 프리뷰 응답 속도가 대폭 개선되어 장편 영화에서 원하는 장면을 앞뒤로 건너뛸 때 지연 없이 즉각적으로 화면을 찾을 수 있습니다.</p></section><section id="section-4"><h2>구형 저사양 기기에서 구버전 유지가 유리한 경우</h2><p>출시된 지 5년 이상 지난 구형 태블릿이나 2GB RAM 이하의 보급형 안드로이드 TV 박스를 사용 중이라면 무조건 최신 시각 효과가 추가된 버전을 고집하기보다 현재 끊김 없이 잘 돌아가는 경량 안정화 버전을 유지하는 것도 현명한 방법입니다.</p><p>다만 스트리밍 서버 보안 인증서(SSL/TLS) 갱신으로 인해 너무 오래된 구버전에서 목록 로딩이 멈추는 시점이 오면 그때 최신 호환 빌드로 판올림을 진행하시기 바랍니다.</p></section>
+          
+        <div class="info-callout">
+          <div class="info-callout-title">함께 읽으면 좋은 필수 연관 가이드</div>
+          <p style="margin-bottom:8px;">보다 완벽한 스트리밍 환경 구성을 위해 아래 단계별 가이드를 이어서 확인해 보세요.</p>
+          <ul style="margin-bottom:0;">
+            <li><a href="castle-app-ui-features-watchlist-guide.html" style="color:#a5b4fc;font-weight:700;">캐슬앱 인터페이스 200% 활용법: 나만의 보관함·시청 기록·제스처 단축키</a></li>
+            <li><a href="castle-app-faq-complete-guide.html" style="color:#a5b4fc;font-weight:700;">캐슬앱(Castle App) 자주 묻는 질문(FAQ) 완벽 해설 및 기기 호환성 총정리</a></li>
+          </ul>
+        </div>
+        </div>
+
+        <nav class="post-prev-next" aria-label="이전 및 다음 포스트 이동">
+          <a class="pn-card" href="castle-app-security-privacy-safety.html">
+            <span class="pn-label">&larr; 이전 가이드</span>
+            <span class="pn-title">캐슬앱 보안성 검증·안전한 APK 판별법 및 개인정보 보호 체크리스트</span>
+          </a>
+          <a class="pn-card" href="castle-app-ui-features-watchlist-guide.html">
+            <span class="pn-label">다음 가이드 &rarr;</span>
+            <span class="pn-title">캐슬앱 인터페이스 200% 활용법: 나만의 보관함·시청 기록·제스처 단축키</span>
+          </a>
+        </nav>
+
+        <section class="related-posts-section" aria-label="관련 추천 포스트">
+          <h2 class="section-title" style="font-size:1.35rem;margin-bottom:6px;">추천 연관 가이드</h2>
+          <p class="section-subtitle">주제별로 연결된 심화 설정 매뉴얼을 확인해 보세요.</p>
+          <div class="related-grid">
+            
+            <article class="post-card">
+              <a href="castle-app-ui-features-watchlist-guide.html" class="post-card-thumb">
+                <img class="lazy-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23161f33'/%3E%3C/svg%3E" data-src="assets/images/post-11.svg" alt="캐슬앱 인터페이스 200% 활용법: 나만의 보관함·시청 기록·제스처 단축키" loading="lazy" width="800" height="450">
+                <span class="post-category-tag">기능 활용</span>
+              </a>
+              <div class="post-card-body">
+                <h3 class="post-card-title"><a href="castle-app-ui-features-watchlist-guide.html">캐슬앱 인터페이스 200% 활용법: 나만의 보관함·시청 기록·제스처 단축키</a></h3>
+                <div class="post-card-footer">
+                  <span>2026-11-20</span>
+                  <a class="read-more-link" href="castle-app-ui-features-watchlist-guide.html">자세히 보기 &rarr;</a>
+                </div>
+              </div>
+            </article>
+            <article class="post-card">
+              <a href="castle-app-faq-complete-guide.html" class="post-card-thumb">
+                <img class="lazy-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23161f33'/%3E%3C/svg%3E" data-src="assets/images/post-12.svg" alt="캐슬앱(Castle App) 자주 묻는 질문(FAQ) 완벽 해설 및 기기 호환성 총정리" loading="lazy" width="800" height="450">
+                <span class="post-category-tag">오류 해결</span>
+              </a>
+              <div class="post-card-body">
+                <h3 class="post-card-title"><a href="castle-app-faq-complete-guide.html">캐슬앱(Castle App) 자주 묻는 질문(FAQ) 완벽 해설 및 기기 호환성 총정리</a></h3>
+                <div class="post-card-footer">
+                  <span>2026-11-21</span>
+                  <a class="read-more-link" href="castle-app-faq-complete-guide.html">자세히 보기 &rarr;</a>
+                </div>
+              </div>
+            </article>
+            <article class="post-card">
+              <a href="castle-app-apk-download-install.html" class="post-card-thumb">
+                <img class="lazy-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23161f33'/%3E%3C/svg%3E" data-src="assets/images/post-01.svg" alt="캐슬앱(Castle App) 최신 버전 APK 다운로드 및 안드로이드 완벽 설치 가이드" loading="lazy" width="800" height="450">
+                <span class="post-category-tag">설치 가이드</span>
+              </a>
+              <div class="post-card-body">
+                <h3 class="post-card-title"><a href="castle-app-apk-download-install.html">캐슬앱(Castle App) 최신 버전 APK 다운로드 및 안드로이드 완벽 설치 가이드</a></h3>
+                <div class="post-card-footer">
+                  <span>2026-11-10</span>
+                  <a class="read-more-link" href="castle-app-apk-download-install.html">자세히 보기 &rarr;</a>
+                </div>
+              </div>
+            </article>
+            <article class="post-card">
+              <a href="castle-app-smart-tv-firestick-guide.html" class="post-card-thumb">
+                <img class="lazy-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23161f33'/%3E%3C/svg%3E" data-src="assets/images/post-02.svg" alt="스마트 TV·안드로이드 TV·파이어스틱에 캐슬앱 설치 및 대화면 연동 방법" loading="lazy" width="800" height="450">
+                <span class="post-category-tag">기기 연동</span>
+              </a>
+              <div class="post-card-body">
+                <h3 class="post-card-title"><a href="castle-app-smart-tv-firestick-guide.html">스마트 TV·안드로이드 TV·파이어스틱에 캐슬앱 설치 및 대화면 연동 방법</a></h3>
+                <div class="post-card-footer">
+                  <span>2026-11-11</span>
+                  <a class="read-more-link" href="castle-app-smart-tv-firestick-guide.html">자세히 보기 &rarr;</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </article>
+
+      <aside class="post-sidebar" aria-label="전체 가이드 목록 사이드바">
+        <div class="sidebar-widget">
+          <h2 class="widget-title">전체 12개 공식 가이드</h2>
+          <ul class="sidebar-post-list">
+            <li><a class="" href="castle-app-apk-download-install.html"><span class="sidebar-num">01</span><span>캐슬앱(Castle App) 최신 버전 APK 다운로드 및 안드로이드 완벽 설치 가이드</span></a></li><li><a class="" href="castle-app-smart-tv-firestick-guide.html"><span class="sidebar-num">02</span><span>스마트 TV·안드로이드 TV·파이어스틱에 캐슬앱 설치 및 대화면 연동 방법</span></a></li><li><a class="" href="castle-app-pc-windows-mac-guide.html"><span class="sidebar-num">03</span><span>PC(윈도우 11·맥북 Mac)에서 캐슬앱 실행하기: 에뮬레이터 최적화 설정</span></a></li><li><a class="" href="castle-app-korean-subtitle-audio-settings.html"><span class="sidebar-num">04</span><span>캐슬앱 한국어 자막 설정·다국어 오디오 트랙 변경 및 싱크 조절 총정리</span></a></li><li><a class="" href="castle-app-hd-4k-streaming-quality.html"><span class="sidebar-num">05</span><span>캐슬앱 1080p FHD·4K 고화질 재생 설정 및 모바일 데이터 절약 노하우</span></a></li><li><a class="" href="castle-app-offline-download-storage-guide.html"><span class="sidebar-num">06</span><span>캐슬앱 오프라인 동영상 저장 기능 및 외장 SD카드 용량 관리 가이드</span></a></li><li><a class="" href="castle-app-buffering-error-fix.html"><span class="sidebar-num">07</span><span>캐슬앱 무한 버퍼링·재생 멈춤·검은 화면 오류 원인과 즉시 해결법</span></a></li><li><a class="" href="castle-app-live-sports-channels-guide.html"><span class="sidebar-num">08</span><span>캐슬앱 실시간 스포츠 중계 및 라이브 TV 채널 끊김 없이 시청하기</span></a></li><li><a class="" href="castle-app-security-privacy-safety.html"><span class="sidebar-num">09</span><span>캐슬앱 보안성 검증·안전한 APK 판별법 및 개인정보 보호 체크리스트</span></a></li><li><a class="current" href="castle-app-update-version-history-guide.html"><span class="sidebar-num">10</span><span>캐슬앱 버전 업데이트 방법·구버전 충돌 해결 및 데이터 백업 가이드</span></a></li><li><a class="" href="castle-app-ui-features-watchlist-guide.html"><span class="sidebar-num">11</span><span>캐슬앱 인터페이스 200% 활용법: 나만의 보관함·시청 기록·제스처 단축키</span></a></li><li><a class="" href="castle-app-faq-complete-guide.html"><span class="sidebar-num">12</span><span>캐슬앱(Castle App) 자주 묻는 질문(FAQ) 완벽 해설 및 기기 호환성 총정리</span></a></li>
+          </ul>
+        </div>
+        <div class="ad-slot-wrapper" data-ad-slot="sidebar-box" aria-label="사이드바 안내 배너"></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="ad-slot-wrapper" data-ad-slot="footer-banner" aria-label="하단 안내 배너"></div>
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand-logo">
+          <span class="brand-badge" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M4 19h16v2H4v-2zm2-3h12V8l-3 2-3-4-3 4-3-2v8z" fill="#ffffff"/>
+            </svg>
+          </span>
+          <span>캐슬앱 가이드</span>
+        </a>
+        <p class="footer-desc">
+          <strong>castlee.cc</strong>는 안드로이드, 스마트 TV, 파이어스틱, PC 사용자를 위한 한국어 캐슬앱(Castle App) 설치·자막·화질 최적화 및 오류 해결 기술 정보 포털입니다.
+        </p>
+      </div>
+      <div>
+        <h3 class="footer-heading">설치 및 디바이스 연동</h3>
+        <ul class="footer-links"><li><a href="castle-app-apk-download-install.html">캐슬앱(Castle App) 최신 버전 AP…</a></li><li><a href="castle-app-smart-tv-firestick-guide.html">스마트 TV·안드로이드 TV·파이어스틱에 캐…</a></li><li><a href="castle-app-pc-windows-mac-guide.html">PC(윈도우 11·맥북 Mac)에서 캐슬앱 …</a></li><li><a href="castle-app-korean-subtitle-audio-settings.html">캐슬앱 한국어 자막 설정·다국어 오디오 트랙…</a></li></ul>
+      </div>
+      <div>
+        <h3 class="footer-heading">화질·오프라인·오류 해결</h3>
+        <ul class="footer-links"><li><a href="castle-app-hd-4k-streaming-quality.html">캐슬앱 1080p FHD·4K 고화질 재생 …</a></li><li><a href="castle-app-offline-download-storage-guide.html">캐슬앱 오프라인 동영상 저장 기능 및 외장 …</a></li><li><a href="castle-app-buffering-error-fix.html">캐슬앱 무한 버퍼링·재생 멈춤·검은 화면 오…</a></li><li><a href="castle-app-live-sports-channels-guide.html">캐슬앱 실시간 스포츠 중계 및 라이브 TV …</a></li></ul>
+      </div>
+      <div>
+        <h3 class="footer-heading">보안·업데이트·활용 팁</h3>
+        <ul class="footer-links"><li><a href="castle-app-security-privacy-safety.html">캐슬앱 보안성 검증·안전한 APK 판별법 및…</a></li><li><a href="castle-app-update-version-history-guide.html">캐슬앱 버전 업데이트 방법·구버전 충돌 해결…</a></li><li><a href="castle-app-ui-features-watchlist-guide.html">캐슬앱 인터페이스 200% 활용법: 나만의 …</a></li><li><a href="castle-app-faq-complete-guide.html">캐슬앱(Castle App) 자주 묻는 질문…</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 <strong>castlee.cc</strong> — 캐슬앱 한국어 종합 정보 센터. All rights reserved.</span>
+      <span><a href="index.html">홈으로</a> · <a href="sitemap.xml">사이트맵</a> · <a href="castle-app-security-privacy-safety.html">보안 정책 안내</a></span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/ads.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
