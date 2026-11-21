@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="55%" stop-color="#161f33"/>
+      <stop offset="100%" stop-color="#14b8a6" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="accent8" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg8)"/>
+  <circle cx="710" cy="80" r="160" fill="#14b8a6" fill-opacity="0.14"/>
+  <circle cx="95" cy="390" r="130" fill="#06b6d4" fill-opacity="0.1"/>
+  <rect x="44" y="42" width="712" height="366" rx="20" fill="#0f172a" fill-opacity="0.72" stroke="#14b8a6" stroke-opacity="0.45" stroke-width="1.5"/>
+  <rect x="76" y="76" width="146" height="36" rx="18" fill="#14b8a6" fill-opacity="0.22" stroke="#14b8a6" stroke-width="1.2"/>
+  <text x="149" y="100" text-anchor="middle" fill="#f8fafc" font-family="Pretendard, Noto Sans KR, Malgun Gothic, sans-serif" font-size="15" font-weight="700">기능 활용</text>
+  <text x="720" y="100" text-anchor="end" fill="#94a3b8" font-family="Pretendard, sans-serif" font-size="15" font-weight="700">GUIDE #08</text>
+  <text x="76" y="195" fill="#ffffff" font-family="Pretendard, Noto Sans KR, Malgun Gothic, sans-serif" font-size="31" font-weight="800">캐슬앱 실시간 스포츠 중계</text>
+  <text x="76" y="242" fill="#e2e8f0" font-family="Pretendard, Noto Sans KR, Malgun Gothic, sans-serif" font-size="29" font-weight="700">및 라이브 TV 채널 끊김 없이 시청하기</text>
+  <rect x="76" y="286" width="220" height="5" rx="2.5" fill="url(#accent8)"/>
+  <text x="76" y="346" fill="#94a3b8" font-family="Pretendard, Noto Sans KR, sans-serif" font-size="17" font-weight="600">castlee.cc 공식 한국어 스트리밍 기술 가이드</text>
+  <circle cx="688" cy="332" r="34" fill="#14b8a6" fill-opacity="0.24" stroke="#14b8a6" stroke-width="1.5"/>
+  <polygon points="680,316 680,348 706,332" fill="#ffffff"/>
+</svg>
